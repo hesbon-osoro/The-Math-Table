@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+    New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+    Tutorial 11
+    Case Problem 2
+
+    The Math Table Calculator
+    Author: Hesbon Osoro
+    Date: 12/10/22  
+
+    Filename: mt_calc.html
+
+
+   -->
+
+    <meta charset="UTF-8" />
+    <title>The Math Table Calculator</title>
+    <link href="mt_base.css" rel="stylesheet" />
+    <link href="mt_styles.css" rel="stylesheet" />
+    <link href="mt_calc.css" rel="stylesheet" />
+    <script src="mt_calc.js" async></script>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        Username
+        <input type="text" id="user" name="user" size="16" />
+        Password
+        <input type="password" id="pwd" name="pwd" size="16" />
+      </div>
+      <img src="mt_logo.png" alt="the Math Table" />
+
+      <nav class="horizontal">
+        <ul>
+          <li><a href="#">Arithmetic</a></li>
+          <li><a href="#">Algebra</a></li>
+          <li><a href="#">Geometry</a></li>
+          <li><a href="#">Statistics</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="vertical">
+      <ul>
+        <li><a href="#">Elementary Addition</a></li>
+        <li><a href="#">Elementary Subtraction</a></li>
+        <li><a href="#">The Multiplication Table</a></li>
+        <li><a href="#">Division</a></li>
+        <li><a href="#">Long Division</a></li>
+
+        <li class="newgroup"><a href="#">Understanding Decimals</a></li>
+        <li><a href="#">The Powers of Ten</a></li>
+
+        <li class="newgroup"><a href="#">Fractions</a></li>
+        <li><a href="#">Mixed Numbers</a></li>
+        <li><a href="#">Order of Operations</a></li>
+
+        <li class="newgroup"><a href="#">Ratios and Proportions</a></li>
+        <li><a href="#">Percentages</a></li>
+
+        <li class="newgroup"><a href="#">Lowest Common Multiple</a></li>
+        <li><a href="#">Greatest Common Divisor</a></li>
+        <li><a href="#">Prime Factors</a></li>
+
+        <li class="newgroup"><a href="#">Practice Exams</a></li>
+        <li><a href="#">Mental Math Tricks</a></li>
+        <li><a href="#">Calculator</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Calculator</h1>
+      <table id="calculator">
+        <tr>
+          <td colspan="5">
+            <textarea id="calcWindow" name="calcWindow"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="calcButton" value="del" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="bksp" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="prev" />
+          </td>
+          <td colspan="2" id="decimalTD">
+            <label>dec</label>
+            <input
+              id="decimals"
+              type="number"
+              min="0"
+              max="9"
+              step="1"
+              value="4"
+              size="1"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="calcButton" value="7" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="8" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="9" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="/" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="(" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="calcButton" value="4" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="5" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="6" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="*" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value=")" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" class="calcButton" value="1" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="2" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="3" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="-" />
+          </td>
+          <td rowspan="2">
+            <input type="button" class="calcButton" value="enter" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" class="calcButton" value="0" />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="." />
+          </td>
+          <td>
+            <input type="button" class="calcButton" value="+" />
+          </td>
+        </tr>
+      </table>
+
+      <aside>
+        <p>
+          Use this calculator to perform basic operations and test your work.
+        </p>
+        <ol>
+          <li>
+            Press <strong>del</strong> or the <strong>Delete</strong> key on
+            your keyboard to clear the calculator window.
+          </li>
+          <li>
+            Press <strong>bksp</strong> or the <strong>Backspace</strong> key on
+            your keyboard to delete the previous character.
+          </li>
+          <li>
+            Press <strong>prev</strong> or the <strong>&uarr;</strong> key on
+            your keyboard to insert the previous equation.
+          </li>
+          <li>
+            Change the number of decimals shown by editing the value in the
+            <strong>dec</strong> box.
+          </li>
+        </ol>
+      </aside>
+    </article>
+
+    <footer>
+      The Math Table:
+      <i>A math resource for the homeschooling family</i>
+      <span>
+        <a href="#">About</a>
+        <a href="#">Terms</a>
+        <a href="#">Help</a>
+      </span>
+    </footer>
+  </body>
+</html>

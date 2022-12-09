@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5, CSS3, and JavaScript 6th Edition
+   Tutorial 11
+   Case Problem 2
+
+   The Math Table Style Sheet
+
+   Filename:  mt_styles.css
+   Supporting Files: 
+
+*/
+
+/* HTML and Body styles */
+
+html {
+  background: rgb(211, 211, 211) url(mt_back.png);
+  font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
+}
+
+body {
+  background-color: white;
+  box-shadow: rgb(51, 51, 51) 10px 0px 40px, rgb(51, 51, 51) -10px 0px 40px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  min-height: 100%;
+  margin: 0px auto;
+  min-width: 600px;
+  max-width: 1024px;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* Header Styles */
+
+header {
+  width: 100%;
+  position: relative;
+}
+
+header > div {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  color: rgb(211, 211, 211);
+}
+
+header > div input {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+header img {
+  width: 100%;
+  display: block;
+}
+
+/* Navigation lists */
+
+nav.horizontal {
+  width: 100%;
+  position: relative;
+  top: -3px;
+}
+
+nav.horizontal ul {
+  margin: 0px;
+}
+
+nav.horizontal ul li {
+  display: block;
+  float: left;
+  height: 50px;
+  width: 25%;
+}
+
+nav.horizontal ul li a {
+  background-color: rgb(64, 64, 64);
+  display: block;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  line-height: 50px;
+  color: rgb(231, 231, 231);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  text-shadow: black 2px 1px 0px;
+  font-size: 1em;
+  outline: 1px solid black;
+}
+
+nav.horizontal ul li a:hover {
+  color: rgb(95, 145, 102);
+}
+
+/* Vertical navigation list styles */
+
+nav.vertical {
+  -webkit-flex: 1 2 160px;
+  flex: 1 2 160px;
+  margin-top: -3px;
+  color: rgb(95, 145, 102);
+  background-color: white;
+}
+
+nav.vertical ul {
+  list-style: none;
+  border-right: 1px solid rgb(95, 145, 102);
+}
+
+nav.vertical ul li {
+  font-size: 0.7em;
+  letter-spacing: 3px;
+}
+
+nav.vertical ul li a {
+  display: block;
+  border-bottom: 1px solid rgb(175, 225, 182);
+  color: rgb(95, 145, 102);
+  line-height: 20px;
+  margin: 5px 25px 5px 20px;
+}
+
+nav.vertical ul li.newgroup a {
+  margin-top: 20px;
+}
+
+nav.vertical ul li a:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+/* Article styles */
+
+article {
+  -webkit-flex: 2 1 320px;
+  flex: 2 1 320px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  padding: 0px 30px;
+}
+
+article h1 {
+  width: 100%;
+  font-size: 2.4em;
+  margin: 20px 0px 20px 30px;
+  letter-spacing: 5px;
+  font-weight: normal;
+  color: rgb(95, 145, 102);
+  text-shadow: rgb(181, 181, 181) 3px 3px 5px;
+  text-align: center;
+}
+
+/* Table Styles */
+
+article table {
+  -webkit-flex: 1 1 240px;
+  flex: 1 1 240px;
+}
+
+/* Aside styles */
+
+article aside {
+  -webkit-flex: 1 1 320px;
+  flex: 1 1 320px;
+}
+
+article aside p {
+  margin: 0px 0px 0px 30px;
+}
+
+article aside ol {
+  margin-top: 20px;
+  padding: 0px 0px 0px 50px;
+  list-style-type: disc;
+}
+
+article aside ol li {
+  line-height: 1.8em;
+}
+
+/* Page footer styles */
+
+footer {
+  background-color: rgb(64, 64, 64);
+  clear: left;
+  color: white;
+  font-size: 0.8em;
+  height: 10px;
+  line-height: 10px;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+footer span {
+  float: right;
+  margin-right: 10px;
+}
+
+footer span a {
+  color: white;
+}
